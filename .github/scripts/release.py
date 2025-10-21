@@ -52,7 +52,7 @@ def main():
 
     run_command(["git", "add", str(version_file)])
     run_command(["git", "commit", "-m", f"Release {tag}"])
-    run_command(["git", "tag", "-m", f"Release {tag}", tag])
+    run_command(["git", "tag", "-s", "-m", f"Release {tag}", tag])
 
     if next_version.lower() != "skip":
         print(f"Updating version to {next_version} for next development cycle")

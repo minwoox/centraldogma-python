@@ -16,7 +16,7 @@ env:
 
 jobs:
   release-and-tag:
-    if: github.repository == 'line/centraldogma-python'
+    if: github.repository == 'minwoox/centraldogma-python'
     runs-on: ubuntu-latest
 
     steps:
